@@ -1,0 +1,112 @@
+# Data files (exclude all data to keep repository clean)
+data/
+*.csv
+*.tsv
+*.json
+*.pt
+*.pkl
+*.npy
+*.npz
+
+# Raw data and processed data
+mstar_dataset.csv
+mstar_dataset_clean.csv
+scc_survival_*.csv
+mstar_dataset.csv
+
+# Internal processing files
+failed_cases.json
+smart_download_summary.json
+updated_mapping_table.tsv
+
+# Directories with sensitive data
+data/patients/
+data/text_data/
+data/scc_pis/
+
+# Internal scripts (exclude data download and processing)
+download_optimized_data_api.py
+!process_all_cases_smart.py
+create_dataset_*.py
+generate_predictions_1211.py
+!generate_predictions_1347.py
+create_table_*.py
+create_combined_figure.py
+create_corrected_visual_table.py
+plot_3modal_results.py
+!extract_text_features.py
+
+# Results directories
+scc_results_*/
+analysis_results/
+correct_predictions/
+
+# Framework directories (too large for GitHub)
+mSTAR/
+CLAM/
+
+# Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Model checkpoints and large files
+*.ckpt
+*.pth
+*.h5
+*.hdf5
+*.model
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Documentation files (keep only README)
+proposal.txt
+proposal.pdf
+*.md
+!README.md
+
+# Keep only the 3-modal training script and related files
+!scc_3modal_training.py
+!process_all_cases_smart.py
+!generate_predictions_1347.py
+!extract_text_features.py
+!configs/
+!Figs/
+scc_2modal_training.py

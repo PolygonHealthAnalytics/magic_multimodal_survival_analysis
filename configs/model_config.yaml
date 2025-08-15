@@ -1,0 +1,53 @@
+# MAGIC Use Case 2: SCC Multimodal Survival Analysis Configuration
+
+# Model Architecture
+model:
+  name: "Porpoise"
+  fusion: "lrb"  # Low-rank bilinear fusion
+  n_classes: 4   # 4-class survival prediction (quartiles)
+
+# Data Modalities
+modalities:
+  wsi:
+    feature_dim: 2048
+    hidden_dim: 512
+    output_dim: 256
+    use_attention: true
+    
+  rnaseq:
+    input_dim: 5000  # Number of genes
+    hidden_dim: 256
+    output_dim: 256
+    use_snn: true
+    
+  text:
+    feature_dim: 768  # PubMedBERT output dimension
+    hidden_dim: 256
+    output_dim: 256
+
+# Training Parameters
+training:
+  batch_size: 1
+  learning_rate: 2e-4
+  epochs: 20
+  optimizer: "Adam"
+  scheduler: "CosineAnnealingLR"
+  loss_function: "NLLSurvLoss"
+  
+# Evaluation
+evaluation:
+  cv_folds: 5
+  metric: "ConcordanceIndex"
+  test_size: 0.2
+  
+# Data Paths (to be configured by user)
+paths:
+  data_root: "data/patients"
+  features_dir: "data/features"
+  results_dir: "results"
+  
+# Hardware
+hardware:
+  device: "cuda"  # or "cpu"
+  num_workers: 4
+  pin_memory: true
