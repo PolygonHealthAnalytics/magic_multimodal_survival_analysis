@@ -2,7 +2,6 @@
 
 ## 🎯 Overview
 This repository demonstrates **Use Case 2** from the MAGIC (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
-[put figure 1 here]
 
 The analysis combines three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
