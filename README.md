@@ -19,12 +19,12 @@ Before running this analysis, you need to:
 - Sufficient storage space (~1TB for processed features)
 
 ## 🚀 Quick Start
-1. **Data Download**: Obtain SCC multimodal data from MAGIC platform
+1. **Data Download**: Obtain SCC multimodal data from [MAGIC platform](https://magic.polygonhealthanalytics.com/)
 2. **Setup Environment**: `pip install -r requirements.txt`
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
-4. **Data Processing**: Run the preprocessing pipeline
-5. **Model Training**: Execute the 3-modal survival analysis
-6. **Results Analysis**: Evaluate model performance
+4. **Data Processing**: Run the preprocessing pipeline: `process_all_cases_smart.py` and `extract_text_features.py`.
+5. **Model Training**: Execute the 3-modal survival analysis: `scc_3modal_training.py`
+6. **Results Analysis**: Evaluate model performance: `generate_predictions_1347.py`
 
 ## 📊 Data Processing Pipeline
 
@@ -35,7 +35,6 @@ Before running this analysis, you need to:
 - Sufficient storage space
 
 ### Step 2: Complete Data Processing
-The `process_all_cases_smart.py` script handles the entire data processing pipeline:
 
 1. **Pathology Text Processing**:
    - OCR Conversion: Amazon Textract extracts plain text from PDF pathology reports
