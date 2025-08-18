@@ -29,7 +29,7 @@ modalities:
 training:
   batch_size: 1
   learning_rate: 2e-4
-  epochs: 20
+  epochs: 40
   optimizer: "Adam"
   scheduler: "CosineAnnealingLR"
   loss_function: "NLLSurvLoss"
