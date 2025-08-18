@@ -3,9 +3,9 @@
 ## 🎯 Overview
 This repository supports the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform, enabling users to perform multimodal survival analysis on their own datasets.
 
-In this tutorial, we demonstrate the workflow using an example of squamouse cell carcinoma, integrating three key data modalities:
+In this tutorial, we demonstrate the workflow using an example of squamous cell carcinoma, integrating three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
-- **RNA-Seq Data**: Gene expression profiles (5000 most variable genes)
+- **RNA-Seq Data**: STAR-aligned gene-level read counts with annotation (augmented counts table)
 - **Pathology Text**: Clinical narratives extracted from pathology reports
 
 ![Workflow Overview](Figs/Fig1.png)
@@ -19,7 +19,7 @@ Before running this analysis, you need to:
 - Sufficient storage space (~1TB for processed features)
 
 ## 🚀 Quick Start
-1. **Data Download**: Obtain SCC multimodal data from [MAGIC platform](https://magic.polygonhealthanalytics.com/)
+1. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
 2. **Setup Environment**: `pip install -r requirements.txt`
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
 4. **Data Processing**: Run the preprocessing pipeline: `process_all_cases_smart.py` and `extract_text_features.py`.
@@ -76,11 +76,11 @@ We selected the **Porpoise model** for this analysis due to its characteristics:
 - **Bilinear Fusion**: Advanced fusion mechanism for multimodal integration
 
 ### Architecture Components
-1. **WSI Branch**: Deep Sets + Attention mechanism (2048 → 512 → 256)
-2. **RNA-Seq Branch**: SNN (Sparse Neural Network) blocks (5000 → 256 → 256)
-3. **Text Branch**: PubMedBERT features (768 → 256)
+1. **WSI Branch**: Deep Sets + Attention mechanism
+2. **RNA-Seq Branch**: SNN (Sparse Neural Network) blocks
+3. **Text Branch**: PubMedBERT features
 4. **Fusion**: Bilinear fusion of 256-dimensional features
-5. **Output**: 4-class survival prediction (quartiles)
+5. **Output**: 4-class survival prediction
 
 ### Training Configuration
 - **Loss Function**: NLLSurvLoss (Negative Log-Likelihood Survival Loss)
