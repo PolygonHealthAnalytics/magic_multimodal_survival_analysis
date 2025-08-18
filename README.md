@@ -1,7 +1,7 @@
 # MAGIC Multimodal Survival Analysis for Squamous Cell Carcinoma
 
 ## 🎯 Overview
-This repository demonstrates a use case from the MAGIC (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
+This repository demonstrates a use case from the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
 
 The analysis combines three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
@@ -104,12 +104,6 @@ We selected the **Porpoise model** for this analysis due to its characteristics:
 - **PubMedBERT**: Pathology text feature extraction
 - **Amazon Textract**: OCR for pathology reports
 
-### Included Files
-- **Scripts**: Core training and processing scripts
-- **Configuration**: `configs/model_config.yaml` for model parameters
-- **Figures**: `Figs/Fig1.png` (workflow) and `Figs/Fig2.png` (results)
-- **Documentation**: Comprehensive README with setup instructions
-
 ### Environment Setup
 ```bash
 # Install required packages
@@ -123,8 +117,6 @@ pip install pandas numpy scikit-learn
 pip install tqdm matplotlib seaborn
 ...
 ```
-
-## ⚙️ Configuration
 
 ### YAML Configuration File
 The `configs/model_config.yaml` file serves as a centralized configuration system for the entire analysis pipeline. 
