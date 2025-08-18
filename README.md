@@ -1,4 +1,4 @@
-# MAGIC Use Case 2: Multimodal Survival Analysis for Squamous Cell Carcinoma
+# MAGIC Multimodal Survival Analysis for Squamous Cell Carcinoma
 
 ## 🎯 Overview
 This repository demonstrates a use case from the MAGIC (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
