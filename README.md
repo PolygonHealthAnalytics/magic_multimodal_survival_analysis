@@ -1,7 +1,7 @@
 # MAGIC Use Case 2: Multimodal Survival Analysis for Squamous Cell Carcinoma
 
 ## 🎯 Overview
-This repository demonstrates **Use Case 2** from the MAGIC (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
+This repository demonstrates a use case from the MAGIC (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
 
 The analysis combines three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
@@ -49,7 +49,7 @@ The `process_all_cases_smart.py` script handles the entire data processing pipel
 3. **RNA-Seq Data Processing**:
    - Gene Expression: 5000 most variable genes selected
    - Normalization: Standard preprocessing applied
-   - Format: Compatible with mSTAR framework
+   - Format: Compatible with the mSTAR framework
 
 ### Step 3: Data Organization
 After processing, organize your data as follows:
@@ -165,17 +165,14 @@ This use case is based on:
 ```
 
 ### MAGIC Platform
-This analysis demonstrates the capabilities of the MAGIC platform for multimodal cancer data analysis. MAGIC provides unified access to diverse cancer datasets and enables integrative analysis workflows.
+This analysis demonstrates the capabilities of the [MAGIC platform](https://magic.polygonhealthanalytics.com/) for multimodal cancer data analysis. MAGIC provides unified access to diverse cancer datasets and enables integrative analysis workflows.
 
 ## 🤝 Contributing
 This repository serves as a demonstration of MAGIC platform capabilities. For questions about the MAGIC platform or data access, please refer to the official MAGIC documentation.
 
-## 📄 License
-[Add appropriate license information]
-
 ## 🔗 Related Links
-- [MAGIC Platform Documentation](link-to-magic-docs)
-- [mSTAR Framework](link-to-mstar)
+- [MAGIC Platform Documentation](https://magic.polygonhealthanalytics.com/#/help)
+- [mSTAR Framework](https://github.com/Innse/mSTAR)
 - [CLAM Repository](https://github.com/mahmoodlab/CLAM)
 - [TCGA Data Portal](https://portal.gdc.cancer.gov/)
 
