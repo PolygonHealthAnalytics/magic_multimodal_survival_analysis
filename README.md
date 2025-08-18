@@ -22,9 +22,9 @@ Before running this analysis, you need to:
 1. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
 2. **Setup Environment**: `pip install -r requirements.txt`
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
-4. **Data Processing**: Run the preprocessing pipeline: `extract_text_features.py` and `process_all_cases_smart.py`.
-5. **Model Training**: Execute the 3-modal survival analysis: `scc_3modal_training.py`
-6. **Results Analysis**: Evaluate model performance: `generate_predictions_1347.py`
+4. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases_smart.py`.
+5. **Model Training**: Execute the 3-modal survival analysis,`scc_3modal_training.py`
+6. **Results Analysis**: Evaluate model performance via `generate_predictions_1347.py`
 
 ## 📊 Data Processing Pipeline
 
