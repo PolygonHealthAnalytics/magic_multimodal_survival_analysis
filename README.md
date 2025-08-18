@@ -1,9 +1,9 @@
 # MAGIC Multimodal Survival Analysis for Squamous Cell Carcinoma
 
 ## 🎯 Overview
-This repository demonstrates a use case from the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform - a comprehensive multimodal survival analysis for Squamous Cell Carcinoma (SCC) patients. This analysis showcases how MAGIC enables integrative analysis of multiple data modalities to predict patient survival outcomes.
+This repository is built for the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform to enable users to conduct multimodal survival analysis on their own.
 
-The analysis combines three key data modalities:
+In our case, we leveraged three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
 - **RNA-Seq Data**: Gene expression profiles (5000 most variable genes)
 - **Pathology Text**: Clinical narratives extracted from pathology reports
