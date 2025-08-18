@@ -3,7 +3,7 @@
 ## 🎯 Overview
 This repository supports the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform, enabling users to perform multimodal survival analysis on their own datasets.
 
-In this tutorial, we demonstrate the workflow using an example of [squamouse cell carcinoma], integrating three key data modalities:
+In this tutorial, we demonstrate the workflow using an example of squamouse cell carcinoma, integrating three key data modalities:
 - **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
 - **RNA-Seq Data**: Gene expression profiles (5000 most variable genes)
 - **Pathology Text**: Clinical narratives extracted from pathology reports
