@@ -4,9 +4,9 @@
 This repository supports the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform, enabling users to perform multimodal survival analysis on their own datasets.
 
 In this tutorial, we demonstrate the workflow using an example of squamous cell carcinoma, integrating three key data modalities:
-- **Whole Slide Images (WSI)**: Histopathology whole slide images in ".svs" format
-- **RNA-Seq Data**: STAR-aligned gene-level read counts with annotation in ".tsv" format
-- **Pathology Text**: Clinical narratives extracted from pathology reports in ".txt" format
+- **Pathology Reports**
+- **RNA-Seq Data**
+- **Whole Slide Images (WSI)**
 
 ![Workflow Overview](Figs/Fig1.png)
 *Figure 1: Complete workflow flowchart showing the data processing and analysis pipeline*
@@ -17,41 +17,46 @@ Before running this analysis, you need to:
 - Python 3.8+ with required packages
 - GPU recommended for training (especially for WSI processing)
 - Sufficient storage space (~1TB for processed features)
-
+  
 ## 🚀 Quick Start
 1. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
 2. **Setup Environment**: `pip install -r requirements.txt`
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
-4. **Data Processing**: Run the preprocessing pipeline: `process_all_cases_smart.py` and `extract_text_features.py`.
+4. **Data Processing**: Run the preprocessing pipeline: `extract_text_features.py` and `process_all_cases_smart.py`.
 5. **Model Training**: Execute the 3-modal survival analysis: `scc_3modal_training.py`
 6. **Results Analysis**: Evaluate model performance: `generate_predictions_1347.py`
 
 ## 📊 Data Processing Pipeline
 
 ### Step 1: Data Download from MAGIC
-**Note**: This step requires access to the MAGIC platform. Please ensure you have:
-- Valid MAGIC platform credentials
-- Access to TCGA SCC datasets
-- Sufficient storage space
+- Pathology Report in ".pdf" format
+- Whole Slide Image in ".svs" format
+- RNA-Seq Data: STAR-aligned gene-level read counts with annotation in ".tsv" format
+- Clinical Data, including survival days information in ".json" format
+
+***Note**: This step requires access to the MAGIC platform. Please ensure you have:*\
+*- Valid MAGIC platform credentials*\
+*- Access to TCGA SCC datasets*\
+*- Sufficient storage space*
 
 ### Step 2: Complete Data Processing
 
-1. **Pathology Text Processing**:
+1. **Pathology Report Processing**:
    - OCR Conversion: Amazon Textract extracts plain text from PDF pathology reports
    - Text Cleaning: Remove artifacts and standardize formatting
    - Feature Extraction: PubMedBERT encodes text into 768-dimensional feature vectors
 
-2. **WSI Image Processing**:
+3. **WSI Image Processing**:
    - Patch Selection: CLAM (Clustering-constrained Attention Multiple instance learning) selects informative patches from WSI
    - Feature Extraction: Pre-trained mSTAR WSI encoder extracts 2048-dimensional features from selected patches
 
-3. **RNA-Seq Data Processing**:
-   - Gene Expression: Gene-level counts obtained
+4. **RNA-Seq Data Processing**:
    - Normalization: Standard preprocessing applied
    - Format: Compatible with the mSTAR framework
 
-### Step 3: Data Organization
-After processing, organize your data as follows:
+Run *extract_text_features.py* to process pathology reports, then run *process_all_cases_smart.py* to process the WSI and RNA-Seq data. The mSTAR compatible dataset CSV file, including the survival information from clinical data, will be automatically generated when *process_all_cases_smart.py* finishes.
+
+After processing, your data should be organized as follows:
 ```
 data/
 ├── patients/
