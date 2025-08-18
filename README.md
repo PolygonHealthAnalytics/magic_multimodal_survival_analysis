@@ -4,16 +4,16 @@
 This repository supports the [MAGIC](https://magic.polygonhealthanalytics.com/) (Multimodal Analysis of Genomics, Imaging and Clinical Data) platform, enabling users to perform multimodal survival analysis on their own datasets.
 
 In this tutorial, we demonstrate the workflow using an example of squamous cell carcinoma, integrating three key data modalities:
-- **Whole Slide Images (WSI)**: Histopathology images processed through CLAM and mSTAR
-- **RNA-Seq Data**: STAR-aligned gene-level read counts with annotation (augmented counts table)
-- **Pathology Text**: Clinical narratives extracted from pathology reports
+- **Whole Slide Images (WSI)**: Histopathology whole slide images in ".svs" format
+- **RNA-Seq Data**: STAR-aligned gene-level read counts with annotation in ".tsv" format
+- **Pathology Text**: Clinical narratives extracted from pathology reports in ".txt" format
 
 ![Workflow Overview](Figs/Fig1.png)
 *Figure 1: Complete workflow flowchart showing the data processing and analysis pipeline*
 
 ## 📋 Prerequisites
 Before running this analysis, you need to:
-- **Download multimodal data from MAGIC platform** (clinical, RNA-Seq, pathology reports, and WSI data)
+- Download multimodal data from MAGIC platform (clinical, RNA-Seq, pathology reports, and WSI data)
 - Python 3.8+ with required packages
 - GPU recommended for training (especially for WSI processing)
 - Sufficient storage space (~1TB for processed features)
@@ -46,7 +46,7 @@ Before running this analysis, you need to:
    - Feature Extraction: Pre-trained mSTAR WSI encoder extracts 2048-dimensional features from selected patches
 
 3. **RNA-Seq Data Processing**:
-   - Gene Expression: 5000 most variable genes selected
+   - Gene Expression: Gene-level counts obtained
    - Normalization: Standard preprocessing applied
    - Format: Compatible with the mSTAR framework
 
@@ -87,7 +87,7 @@ We selected the **Porpoise model** for this analysis due to its characteristics:
 - **Optimizer**: Adam with learning rate 2e-4
 - **Scheduler**: Cosine annealing
 - **Evaluation**: 5-fold cross-validation with Concordance Index
-- **Training**: 20 epochs with batch size 1
+- **Training**: 40 epochs with batch size 1
 
 ## 📈 Results
 
