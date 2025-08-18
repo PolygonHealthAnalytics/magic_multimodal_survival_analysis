@@ -162,9 +162,9 @@ This analysis demonstrates the capabilities of the [MAGIC platform](https://magi
 This repository serves as a demonstration of MAGIC platform capabilities. For questions about the MAGIC platform or data access, please refer to the official MAGIC documentation.
 
 ## 🔗 Related Links
-- [MAGIC Platform Documentation](https://magic.polygonhealthanalytics.com/#/help)
 - [mSTAR Framework](https://github.com/Innse/mSTAR)
 - [CLAM Repository](https://github.com/mahmoodlab/CLAM)
+- [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract)
 - [TCGA Data Portal](https://portal.gdc.cancer.gov/)
 
 ## 📝 Notes
