@@ -34,11 +34,6 @@ Before running this analysis, you need to:
 - RNA-Seq Data: STAR-aligned gene-level read counts with annotation in ".tsv" format
 - Clinical Data, including survival days information in ".json" format
 
-***Note**: This step requires access to the MAGIC platform. Please ensure you have:*\
-*- Valid MAGIC platform credentials*\
-*- Access to TCGA SCC datasets*\
-*- Sufficient storage space*
-
 ### Step 2: Complete Data Processing
 
 1. **Pathology Report Processing**:
