@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Generate predictions for all 1347 cases using 5-fold cross-validation models
-Fixed version based on training script insights
+Generate predictions for all 1347 cases using 5-fold cross-validation models.
+Fixed version based on training script insights.
 """
 
 import os

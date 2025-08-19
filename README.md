@@ -8,7 +8,7 @@ In this tutorial, we demonstrate the workflow using an example of squamous cell 
 - **RNA-Seq Data**
 - **Whole Slide Images (WSI)**
 
-![Workflow Overview](Figs/Fig1.png)
+![Workflow Overview](Figs/Fig%201.png)
 *Figure 1: Complete workflow flowchart showing the data processing and analysis pipeline*
 
 ## 📋 Prerequisites
@@ -91,7 +91,7 @@ We selected the **Porpoise model** for this analysis due to its characteristics:
 
 ## 📈 Results
 
-![Results Visualization](Figs/Fig2.png)
+![Results Visualization](Figs/Fig%202.png)
 *Figure 2: Results visualization from the survival prediction analysis*
 
 ***Left***: Pie chart showing the contribution of each modality in the multimodal fusion model. ***Right***: Bar plot displaying C-index performance across 5-fold cross-validation. The 3-modal model achieves consistent performance across folds. The C-index 0.6961 ± 0.0170 is comparable to the mSTAR listed benchmark. 

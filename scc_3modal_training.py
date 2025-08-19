@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-SCC 3-Modal Survival Analysis - CLEAN VERSION
-Uses pre-extracted text features from disk (run extract_text_features.py first)
+SCC 3-Modal Survival Analysis - CLEAN VERSION.
+Uses pre-extracted text features from disk (run extract_text_features.py first).
 """
 
 import os

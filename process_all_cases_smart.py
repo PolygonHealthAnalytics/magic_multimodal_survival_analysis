@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Smart Process All Cases for mSTAR Multimodal Survival Analysis
+Smart Process All Cases for mSTAR Multimodal Survival Analysis.
 
 SMART PROCESSING APPROACH:
 - Only process what's missing (like download script)

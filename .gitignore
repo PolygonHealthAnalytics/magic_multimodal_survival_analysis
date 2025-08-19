@@ -1,4 +1,4 @@
-# Data files (exclude all data to keep repository clean)
+# Data files (exclude all data to keep repository clean).
 data/
 *.csv
 *.tsv
