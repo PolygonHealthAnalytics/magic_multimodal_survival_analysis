@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Text Feature Extraction Script.
-Pre-extracts PubMedBERT features for all cases and saves them to disk.
+Text Feature Extraction Script
+Pre-extracts PubMedBERT features for all cases and saves them to disk
 """
 
 import os

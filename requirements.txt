@@ -26,7 +26,7 @@ tqdm>=4.62.0
 pyyaml>=5.4.0
 scipy>=1.7.0
 
-# Optional: For GPU support
+# Optional: GPU support
 # cudatoolkit>=11.0  # Uncomment if using CUDA
 
 # Development tools

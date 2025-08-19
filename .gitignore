@@ -26,7 +26,7 @@ data/scc_pis/
 
 # Internal scripts (exclude data download and processing)
 download_optimized_data_api.py
-!process_all_cases_smart.py
+!process_all_cases.py
 create_dataset_*.py
 generate_predictions_1211.py
 !generate_predictions.py
@@ -104,7 +104,7 @@ proposal.pdf
 
 # Keep only the 3-modal training script and related files
 !scc_3modal_training.py
-!process_all_cases_smart.py
+!process_all_cases.py
 !generate_predictions.py
 !extract_text_features.py
 !configs/

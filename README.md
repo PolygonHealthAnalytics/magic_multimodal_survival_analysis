@@ -8,7 +8,7 @@ In this tutorial, we demonstrate the workflow using an example of squamous cell 
 - **RNA-Seq Data**
 - **Whole Slide Images (WSI)**
 
-![Workflow Overview](Figs/Fig%201.png)
+![Workflow Overview](Figs/Fig1.png)
 *Figure 1: Complete workflow flowchart showing the data processing and analysis pipeline*
 
 ## 📋 Prerequisites
@@ -22,7 +22,7 @@ Before running this analysis, you need to:
 1. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
 2. **Setup Environment**: `pip install -r requirements.txt`
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
-4. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases_smart.py`.
+4. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases.py`.
 5. **Model Training**: Execute the 3-modal survival analysis,`scc_3modal_training.py`
 6. **Results Analysis**: Evaluate model performance via `generate_predictions.py`
 
@@ -49,7 +49,7 @@ Before running this analysis, you need to:
    - Normalization: Standard preprocessing applied
    - Format: Compatible with the mSTAR framework
 
-Run *extract_text_features.py* to process pathology reports, then run *process_all_cases_smart.py* to process the WSI and RNA-Seq data. The mSTAR compatible dataset CSV file, including the survival information from clinical data, will be automatically generated when *process_all_cases_smart.py* finishes.
+Run *extract_text_features.py* to process pathology reports, then run *process_all_cases.py* to process the WSI and RNA-Seq data. The mSTAR compatible dataset CSV file, including the survival information from clinical data, will be automatically generated when *process_all_cases.py* finishes.
 
 After processing, your data should be organized as follows:
 ```
@@ -91,7 +91,7 @@ We selected the **Porpoise model** for this analysis due to its characteristics:
 
 ## 📈 Results
 
-![Results Visualization](Figs/Fig%202.png)
+![Results Visualization](Figs/Fig2.png)
 *Figure 2: Results visualization from the survival prediction analysis*
 
 ***Left***: Pie chart showing the contribution of each modality in the multimodal fusion model. ***Right***: Bar plot displaying C-index performance across 5-fold cross-validation. The 3-modal model achieves consistent performance across folds. The C-index 0.6961 ± 0.0170 is comparable to the mSTAR listed benchmark. 
