@@ -156,10 +156,10 @@ This use case is based on:
 ```
 
 ### MAGIC Platform
-This analysis demonstrates the capabilities of the [MAGIC platform](https://magic.polygonhealthanalytics.com/) for multimodal cancer data analysis. MAGIC provides unified access to diverse cancer datasets and enables integrative analysis workflows.
+In collaboration with the NCI and under Contract No. 75N91024C00070, we at Polygon Health Analytics LLC developed MAGIC — the Multimodal Analysis of Genomics, Imaging & Clinical Data tool. MAGIC is designed to help clinicians and researchers seamlessly explore and analyze complex cancer datasets, bridging the gap between data identification and actionable insight. More information can be found from the MAGIC website https://magic.polygonhealthanalytics.com/
 
 ## 🤝 Contributing
-This repository serves as a demonstration of MAGIC platform capabilities. For questions about the MAGIC platform or data access, please refer to the official MAGIC documentation.
+This repository serves as a demonstration of MAGIC's capabilities to support multimodal data analysis. For questions about the MAGIC platform or data access, please refer to the official MAGIC documentation or reach out to us at info@polygonhealthanalytics.com.
 
 ## 🔗 Related Links
 - [mSTAR Framework](https://github.com/Innse/mSTAR)
@@ -169,5 +169,5 @@ This repository serves as a demonstration of MAGIC platform capabilities. For qu
 
 ## 📝 Notes
 - This repository contains only the analysis code and does not include raw data
-- Data must be downloaded separately from the MAGIC platform
+- Data must be downloaded separately using MAGIC
 - Results may vary depending on the specific dataset and preprocessing steps 
