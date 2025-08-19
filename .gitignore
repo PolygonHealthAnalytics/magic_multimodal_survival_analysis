@@ -29,7 +29,7 @@ download_optimized_data_api.py
 !process_all_cases_smart.py
 create_dataset_*.py
 generate_predictions_1211.py
-!generate_predictions_1347.py
+!generate_predictions.py
 create_table_*.py
 create_combined_figure.py
 create_corrected_visual_table.py
@@ -105,7 +105,7 @@ proposal.pdf
 # Keep only the 3-modal training script and related files
 !scc_3modal_training.py
 !process_all_cases_smart.py
-!generate_predictions_1347.py
+!generate_predictions.py
 !extract_text_features.py
 !configs/
 !Figs/

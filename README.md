@@ -24,7 +24,7 @@ Before running this analysis, you need to:
 3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
 4. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases_smart.py`.
 5. **Model Training**: Execute the 3-modal survival analysis,`scc_3modal_training.py`
-6. **Results Analysis**: Evaluate model performance via `generate_predictions_1347.py`
+6. **Results Analysis**: Evaluate model performance via `generate_predictions.py`
 
 ## 📊 Data Processing Pipeline
 
