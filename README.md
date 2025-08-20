@@ -13,7 +13,7 @@ In this tutorial, we demonstrate the workflow using an example of squamous cell 
 
 ## 📋 Prerequisites
 Before running this analysis, you need to:
-- Download multimodal data from MAGIC platform (clinical, RNA-Seq, pathology reports, and WSI data)
+- Download multimodal data from the MAGIC platform (clinical, RNA-Seq, pathology reports, and WSI data)
 - Python 3.8+ with required packages
 - GPU recommended for training (especially for WSI processing)
 - Sufficient storage space (~1TB for processed features)
