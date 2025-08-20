@@ -34,14 +34,14 @@ This project requires two external frameworks to be cloned into the project dire
 ### 1. mSTAR Framework
 ```bash
 cd mSTAR
-git clone https://github.com/Innse/mSTAR.git .
+git clone https://github.com/Innse/mSTAR.git
 ```
 **Purpose**: Multimodal survival analysis framework for WSI feature extraction and model training.
 
 ### 2. CLAM Framework  
 ```bash
 cd CLAM
-git clone https://github.com/mahmoodlab/CLAM.git .
+git clone https://github.com/mahmoodlab/CLAM.git
 ```
 **Purpose**: Patch selection and preprocessing for whole slide images.
 
