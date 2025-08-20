@@ -51,7 +51,7 @@ git clone https://github.com/mahmoodlab/CLAM.git
 - Pathology Report in ".pdf" format
 - Whole Slide Image in ".svs" format
 - RNA-Seq Data: STAR-aligned gene-level read counts with annotation in ".tsv" format
-- Clinical Data, including survival days information in ".json" format
+- Clinical Data, including survival days information in ".json"/".tsv" format
 
 ### Step 2: Complete Data Processing
 
