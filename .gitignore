@@ -45,6 +45,10 @@ correct_predictions/
 mSTAR/
 CLAM/
 
+# Keep README files in framework directories
+!mSTAR/README.md
+!CLAM/README.md
+
 # Python cache and temporary files
 __pycache__/
 *.pyc

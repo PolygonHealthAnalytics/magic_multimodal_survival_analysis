@@ -19,12 +19,31 @@ Before running this analysis, you need to:
 - Sufficient storage space (~1TB for processed features)
   
 ## 🚀 Quick Start
-1. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
-2. **Setup Environment**: `pip install -r requirements.txt`
-3. **Configuration**: Review and customize `configs/model_config.yaml` if needed
-4. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases.py`.
-5. **Model Training**: Execute the 3-modal survival analysis,`scc_3modal_training.py`
-6. **Results Analysis**: Evaluate model performance via `generate_predictions.py`
+1. **Setup Dependencies**: Clone required frameworks (see Setup Dependencies section above)
+2. **Data Download**: Obtain SCC multimodal data from MAGIC (Refer to "Task 2: Add Complexity to Your Cohort" on the MAGIC user tutorial page)
+3. **Setup Environment**: `pip install -r requirements.txt`
+4. **Configuration**: Review and customize `configs/model_config.yaml` if needed
+5. **Data Processing**: Run the preprocessing pipeline, `extract_text_features.py` and `process_all_cases.py`.
+6. **Model Training**: Execute the 3-modal survival analysis,`scc_3modal_training.py`
+7. **Results Analysis**: Evaluate model performance via `generate_predictions.py`
+
+## 🔧 Setup Dependencies
+
+This project requires two external frameworks to be cloned into the project directory:
+
+### 1. mSTAR Framework
+```bash
+cd mSTAR
+git clone https://github.com/Innse/mSTAR.git .
+```
+**Purpose**: Multimodal survival analysis framework for WSI feature extraction and model training.
+
+### 2. CLAM Framework  
+```bash
+cd CLAM
+git clone https://github.com/mahmoodlab/CLAM.git .
+```
+**Purpose**: Patch selection and preprocessing for whole slide images.
 
 ## 📊 Data Processing Pipeline
 
